@@ -1,7 +1,7 @@
 # proyectotp1
 Proyecto maven de prueba para el módulo Entornos de Desarrollo.
 
-Programa java sencillo que gestiona un almacén, con diferentes funcionalidades, a las cuales podemos acceder mediante un menú.
+Programa java sencillo que gestiona una pila de pales de un almacén, con diferentes funcionalidades, a las cuales podemos acceder mediante un menú.
 
 Para ejecutar el programa, debemos de ejecutar el archivo TestAlmacen.java, puesto que es el que contiene el método principal que ejecuta el menú. 
 
@@ -9,10 +9,10 @@ Debemos tener en cuenta que este programa es básico, por lo que aún hay muchas
 
 ###El programa tiene las siguientes funcionalidades:###
 
-1. Añadir palé:
-2. 
-3.
-4.
+1. Añadir palé: añade un palé a la pila.
+2. Quitar palé: elimina el palé que se encuentre en lo alto de la pila.
+3. Mostrar palés: muestra todos los palés que se encuentren en la pila 
+4. Mostrar totales: muestra los totales de peso y de cajas de los palés.
 
 
 
