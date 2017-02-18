@@ -7,9 +7,10 @@ Para ejecutar el programa, debemos de ejecutar el archivo TestAlmacen.java, pues
 
 Debemos tener en cuenta que este programa es básico, por lo que aún hay muchas funcionalidades por añadir, como un entorno gráfico o que los datos sean guardados en una base de datos, puesto que ahora estos se pierden al detener su ejecución.
 
-*_El programa tiene las siguientes funcionalidades:_* 
+###El programa tiene las siguientes funcionalidades:###
+
 1. Añadir palé:
-2.
+2. 
 3.
 4.
 
