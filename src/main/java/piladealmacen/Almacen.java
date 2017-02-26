@@ -34,7 +34,7 @@ public class Almacen {
 				mostrarPale();
 				break;
 			case 4:
-				mostrarPale();
+				
 				break;
 			case 0:
 				System.out.println("Adiós!!!!!");
@@ -50,7 +50,7 @@ public class Almacen {
 	}
 
 	private void mostrarPale() throws NumberFormatException, IOException {
-		
+		System.out.println("Introduzca el codigo del pale a mostrar: ");
 		Pale a = new Pale();
 		int codaux = Integer.parseInt(teclado.readLine());
 		
