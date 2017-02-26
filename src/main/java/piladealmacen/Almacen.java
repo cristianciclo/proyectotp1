@@ -75,7 +75,7 @@ public class Almacen {
 		Pale a = new Pale();
 		a.PedirPale();
 		
-		for (int i = posicion-1; i >= 0; i--) {
+		for (int i = posicion; i >= 0; i--) {
 			if(a.getCodigo().equals(pales[i])){
 				System.out.println("Lo sentimos, pero el palé que intenta introducir ya se encuentra en la pila.");
 				return;
@@ -87,7 +87,7 @@ public class Almacen {
 	}
 	
 	public void recorrer(){
-		for (int i = 0; i < pales.length; i++) {
+		for (int i = 0; i < posicion; i++) {
 			System.out.println(pales[i]);
 		}
 	}

@@ -87,8 +87,7 @@ public class Pale {
 
 	@Override
 	public String toString() {
-		return "Pale [codigo=" + codigo + ", peso=" + peso + ", numeroCajas=" + numeroCajas + ", teclado=" + teclado
-				+ "]";
+		return "Pale [codigo=" + codigo + ", peso=" + peso + ", numeroCajas=" + numeroCajas;
 	}
 	
 	
