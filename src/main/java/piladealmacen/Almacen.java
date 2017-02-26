@@ -14,11 +14,11 @@ public class Almacen {
 		int opcion = 0;
 		do{
 		
-			System.out.println("----------MENÚ----------");
-			System.out.println("1. Añadir palé.");
-			System.out.println("2. Quitar palé.");
-			System.out.println("3. Mostrar palé.");
-			System.out.println("4. Mostrar totales.");
+			System.out.println("----------MENU----------");
+			System.out.println("1. Añadir pale.");
+			System.out.println("2. Quitar pale.");
+			System.out.println("3. Mostrar pale.");
+			System.out.println("4. Mostrar pales");
 			System.out.println("0. Salir");
 			
 			opcion = Integer.parseInt(teclado.readLine());
@@ -34,15 +34,15 @@ public class Almacen {
 				mostrarPale();
 				break;
 			case 4:
-				
+				recorrer();
 				break;
 			case 0:
-				System.out.println("Adiós!!!!!");
+				System.out.println("Adios!!!!!");
 				break;
 				
 	
 			default:
-				System.out.println("Por favor, elija un número de 1 al 4.");
+				System.out.println("Por favor, elija un numero de 1 al 4.");
 				break;
 		}
 		

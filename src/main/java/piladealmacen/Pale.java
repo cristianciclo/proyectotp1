@@ -84,6 +84,12 @@ public class Pale {
 		this.numeroCajas = Integer.parseInt(teclado.readLine());
 		
 	}
+
+	@Override
+	public String toString() {
+		return "Pale [codigo=" + codigo + ", peso=" + peso + ", numeroCajas=" + numeroCajas + ", teclado=" + teclado
+				+ "]";
+	}
 	
 	
 	
