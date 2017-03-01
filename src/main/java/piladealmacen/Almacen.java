@@ -65,11 +65,12 @@ public class Almacen {
 	}
 
 	private void quitarPale() {
-		pales[posicion]=null;
-		this.totalCajas-=pales[posicion].getNumeroCajas();
-		this.totalPeso-=pales[posicion].getPeso();
-		posicion--;
-		System.out.println("Se ha quitado un palé.");
+		if(posicion>0){
+			posicion--;
+			this.totalCajas-=pales[posicion].getNumeroCajas();
+			this.totalPeso-=pales[posicion].getPeso();
+			System.out.println("Se ha quitado un pale de la pila.");
+		}
 	}
 
 	private void addPale() throws NumberFormatException, IOException {
