@@ -60,14 +60,16 @@ public class Almacen {
 	}
 	
 	private void mostrarTotales() throws NumberFormatException, IOException {
-		System.out.println("Hay "+posicion+" palés en la pila, y hay un total de cajas de "+this.totalCajas+" y su peso total es "+this.totalPeso);
+		System.out.println("Hay "+posicion+" palÃ©s en la pila, y hay un total de cajas de "+this.totalCajas+" y su peso total es "+this.totalPeso);
 		
 	}
 
 	private void quitarPale() {
 		pales[posicion]=null;
 		posicion--;
-		System.out.println("Se ha quitado un palé.");
+		this.totalCajas-=pales[posicion].get
+		this.totalPeso+=a.getPeso();
+		System.out.println("Se ha quitado un palÃ©.");
 	}
 
 	private void addPale() throws NumberFormatException, IOException {
