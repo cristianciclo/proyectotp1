@@ -70,6 +70,8 @@ public class Almacen {
 			this.totalCajas-=pales[posicion].getNumeroCajas();
 			this.totalPeso-=pales[posicion].getPeso();
 			System.out.println("Se ha quitado un pale de la pila.");
+		}else{
+			System.out.println("El almacen esta vacio");
 		}
 	}
 
