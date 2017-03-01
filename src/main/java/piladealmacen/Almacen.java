@@ -15,9 +15,9 @@ public class Almacen {
 		do{
 		
 			System.out.println("----------MENU----------");
-			System.out.println("1. Añadir pale.");
+			System.out.println("1. Add pale.");
 			System.out.println("2. Quitar pale.");
-			System.out.println("3. Mostrar pale.");
+			System.out.println("3. Mostrar totales.");
 			System.out.println("4. Mostrar pales");
 			System.out.println("0. Salir");
 			
@@ -31,7 +31,7 @@ public class Almacen {
 				quitarPale();
 				break;
 			case 3:
-				mostrarPale();
+				mostrarTotales();
 				break;
 			case 4:
 				recorrer();
@@ -49,19 +49,19 @@ public class Almacen {
 		}while(opcion!=0);
 	}
 
-	private void mostrarPale() throws NumberFormatException, IOException {
-		System.out.println("Introduzca el codigo del pale a mostrar: ");
-		Pale a = new Pale();
-		int codaux = Integer.parseInt(teclado.readLine());
+	private boolean existePale(String codigo){
 		
-		for (int i = posicion-1; i >= 0; i--) {
-			if(pales[i].getCodigo().equals(codaux)){
-				System.out.println(pales[i]);
-				return;
+		for (int i = 0; i < posicion; i++) {
+			if(codigo.equals(pales[i].getCodigo())){
+				return true;
 			}
-			
 		}
-		System.out.println("El código introducido no corresponde a ningún palé.");
+		return false;
+	}
+	
+	private void mostrarTotales() throws NumberFormatException, IOException {
+		System.out.println("Hay "+posicion+" palés en la pila, y hay un total de cajas de "+this.totalCajas+" y su peso total es "+this.totalPeso);
+		
 	}
 
 	private void quitarPale() {
@@ -71,21 +71,23 @@ public class Almacen {
 	}
 
 	private void addPale() throws NumberFormatException, IOException {
-		System.out.println("Introduzca los datos del palé que desea introducir:");
+		System.out.println("Introduzca el codigo del pale que desea introducir:");
+		String codigo = teclado.readLine();
 		Pale a = new Pale();
-		a.PedirPale();
 		
-		for (int i = posicion; i >= 0; i--) {
-			if(a.getCodigo().equals(pales[i])){
-				System.out.println("Lo sentimos, pero el palé que intenta introducir ya se encuentra en la pila.");
-				return;
-			}
-			pales[posicion]=a;
-			posicion++;
-			
+		if(existePale(codigo)){
+			System.out.println("El pale ya existe");
+			return;
 		}
-	}
+		
+		a.PedirPale(codigo);
+		pales[posicion]=a;
+		posicion++;
+		this.totalCajas+=a.getNumeroCajas();
+		this.totalPeso+=a.getPeso();
+		}
 	
+
 	public void recorrer(){
 		for (int i = 0; i < posicion; i++) {
 			System.out.println(pales[i]);

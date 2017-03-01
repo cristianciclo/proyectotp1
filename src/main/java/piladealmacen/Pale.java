@@ -78,7 +78,6 @@ public class Pale {
 	public void PedirPale(String codigo) throws NumberFormatException, IOException{
 		this.codigo = codigo;
 		System.out.println("Introduzca el peso del pale. ");
-		System.out.println("Introduzca el peso del pale. ");
 		this.peso = Double.parseDouble(teclado.readLine());
 		System.out.println("Introduzca el número de cajas del pale.");
 		this.numeroCajas = Integer.parseInt(teclado.readLine());
@@ -87,7 +86,7 @@ public class Pale {
 
 	@Override
 	public String toString() {
-		return "Pale [codigo=" + codigo + ", peso=" + peso + ", numeroCajas=" + numeroCajas;
+		return "Pale [codigo=" + codigo + ", peso=" + peso + ", numeroCajas=" + numeroCajas+"]";
 	}
 	
 	
