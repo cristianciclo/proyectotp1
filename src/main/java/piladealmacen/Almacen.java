@@ -66,9 +66,9 @@ public class Almacen {
 
 	private void quitarPale() {
 		pales[posicion]=null;
-		posicion--;
-		this.totalCajas-=pales[posicion].getnumeroCajas();
+		this.totalCajas-=pales[posicion].getNumeroCajas();
 		this.totalPeso-=pales[posicion].getPeso();
+		posicion--;
 		System.out.println("Se ha quitado un palé.");
 	}
 
