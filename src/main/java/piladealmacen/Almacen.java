@@ -49,7 +49,7 @@ public class Almacen {
 		}while(opcion!=0);
 	}
 
-	private boolean existePale(String codigo){
+	public boolean existePale(String codigo){
 		
 		for (int i = 0; i < posicion; i++) {
 			if(codigo.equals(pales[i].getCodigo())){
