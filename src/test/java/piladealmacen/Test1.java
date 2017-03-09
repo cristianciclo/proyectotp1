@@ -9,7 +9,6 @@ public class Test1 {
 	public void test() {
 		Pale p = new Pale("0001",20.5,10);
 		assertEquals(p.getCodigo(),"0001");
-		assertEquals(p.getPeso,20.5);
 		assertEquals(p.getNumeroCajas(),10);
 		system.out.println("palé construido con éxito.");
 	}
