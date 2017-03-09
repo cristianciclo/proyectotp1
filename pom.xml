@@ -5,8 +5,6 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>ProyectoMaventp1</name>
   <description>Pila de Almacén</description>
-  
-  <name>Maven Almacen Test</name>
    
     <properties>
          <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
