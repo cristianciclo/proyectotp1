@@ -10,7 +10,7 @@ public class Test1 {
 		Pale p = new Pale("0001",20.5,10);
 		assertEquals(p.getCodigo(),"0001");
 		assertEquals(p.getNumeroCajas(),10);
-		fail("Not yet implemented");
+		system.out.println("palé construido con éxito.");
 	}
 
 }
