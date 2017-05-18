@@ -19,8 +19,10 @@ Antes de nada, realizar la descarga o clonación del proyecto, y por suspuesto, 
 
 1. Nos colocaremos en la carpeta donde este el fichero pom.xml y el src(que es donde están los ficheros .java del proyecto).
 2. Una vez situados ahí procederemos a construir el proyecto usando el comando de maven
+
    `mvn package`
 3. Una vez construido el proyecto ya podemos proceder a ejecutarlo. Para ello usaremos java, y debemos poner lo siguiente: 
+
    `java -cp target/proyectomaventp1-0.0.1-SNAPSHOT.jar piladealmacen.TestAlmacen`
  
 
